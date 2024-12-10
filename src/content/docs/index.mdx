@@ -1,36 +1,42 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
+title: Base de Connaissances
+description: Base de Connaissance bac pro du lycée Letournel
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: Des bacs pro du lycée Letournel à Saint Pierre !
   image:
     file: ../../assets/houston.webp
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: Cliquez pour commencer
+      link: /lisez-moi
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
+    - text: A propos
+      link: /a-propos
       icon: external
       variant: minimal
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
-
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+	<Card title="Informatique & Réseaux" icon="pencil">
+		- [Programmation](/informatique/programmation)
+		- [Systèmes](/informatique/systemes)
+		- [Réseaux](/informatique/reseaux)
+		- [Travaux Pratiques](/informatique/travaux-pratiques)
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
+	<Card title="Électricité & Électronique" icon="open-book">
+		- [Électricité](/elec/electricite)
+		- [Électronique](/elec/electronique)
+		- [Automatisme](/elec/automatisme)
+		- [Travaux Pratiques](/elec/travaux-pratiques)
 	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
+	<Card title="Projets" icon="add-document">
+		- [HomeLab](/projets/homelab)
+		- [Réseau Local](/projets/lan)
 	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	<Card title="Divers" icon="setting">
+		- [Les Défis](/defis)
+		- [Les Bac Pro](/a-propos)
 	</Card>
 </CardGrid>

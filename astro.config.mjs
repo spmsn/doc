@@ -5,22 +5,46 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'Base de Connaissance',
+			locales: {
+				root: {
+					label: 'Français',
+					lang: 'fr-FR',
+				},
+			},
 			social: {
 				github: 'https://github.com/withastro/starlight',
 			},
 			sidebar: [
+				{ label: 'Bienvenue !', slug: 'lisez-moi' },
 				{
-					label: 'Guides',
+					label: 'Informatique & Réseaux',
 					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						{ label: 'Programmation', autogenerate: { directory: 'informatique/programmation' }, collapsed: true },
+						{ label: 'Systèmes', autogenerate: { directory: 'informatique/systemes' }, collapsed: true },
+						{ label: 'Réseaux', autogenerate: { directory: 'informatique/reseaux' }, collapsed: true },
+						{ label: 'Travaux Pratiques', autogenerate: { directory: 'informatique/travaux-pratiques', collapsed: true } },
 					],
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: 'Électricité & Électronique',
+					items: [
+						{ label: 'Électricité', autogenerate: { directory: 'elec/electricite' }, collapsed: true },
+						{ label: 'Électronique', autogenerate: { directory: 'elec/electronique' }, collapsed: true },
+						{ label: 'Automatisme', autogenerate: { directory: 'elec/automatisme' }, collapsed: true },
+						{ label: 'Travaux Pratiques', autogenerate: { directory: 'elec/travaux-pratiques' }, collapsed: true },
+					],
 				},
+				{
+					label: 'Projets',
+					items: [
+						{ label: 'Nos projets', slug: 'projets' },
+						{ label: 'HomeLab', autogenerate: { directory: 'projets/homelab' }, collapsed: true },
+						{ label: 'Réseau Local', autogenerate: { directory: 'projet/lan' }, collapsed: true },
+					],
+				},
+				{ label: 'Les Défis', slug: 'defis' },
+				{ label: 'A Propos', slug: 'a-propos' },
 			],
 		}),
 	],
