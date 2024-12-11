@@ -3,6 +3,9 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://spmsn.github.io/doc',
+	base: '/doc',
+    trailingSlash: "never",
 	integrations: [
 		starlight({
 			title: 'Base de Connaissance',
@@ -13,7 +16,7 @@ export default defineConfig({
 				},
 			},
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/spmsn',
 			},
 			sidebar: [
 				{ label: 'Bienvenue !', slug: 'lisez-moi' },
