@@ -3,7 +3,7 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://spmsn.github.io/doc',
+	site: 'https://spmsn.github.io',
 	base: '/doc',
     trailingSlash: "never",
 	integrations: [
