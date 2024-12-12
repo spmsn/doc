@@ -8,7 +8,7 @@ export default defineConfig({
     trailingSlash: "never",
 	integrations: [
 		starlight({
-			title: 'Base de Connaissance',
+			title: 'Base de Connaissance SN',
 			locales: {
 				root: {
 					label: 'Français',
