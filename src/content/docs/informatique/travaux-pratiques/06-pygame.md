@@ -5,9 +5,13 @@ description: Débuter en jeu avec Pygame Zero
 
 [Pygame Zero](https://pgzero-french.readthedocs.io/fr/latest/index.html) permet de développer des jeux vidéos rapidement avec Python et [Pygame](https://www.pygame.org/). Dans ce TP, nous allons créer un petit jeu puis l'améliorer.
 
-## Rendu
+## Notation et Règles
 
-Crée un dossier `pygamezero` dans lequel tu dois mettre tes fichiers de code. A la fin du TP, tu feras une archive ZIP que tu mettras sur l'ENT de ton enseignant. 
+Seront notés : 
+
+- **Le respect des consignes** (2 points)
+- **Ton attitude positive et pro-active** (3 points)
+- La note est plafonnée à 20
 
 :::caution
 **Les IAs ne sont pas autorisées** pour ce TP, sauf mention contraire.
@@ -22,7 +26,66 @@ Pour ce TP, tu as besoin de connaître :
 - [Les boucles (for)](https://python.doctor/page-apprendre-boucles-python-loop)
 - [Les fonctions (qu'on crée avec "def")](https://python.doctor/page-apprendre-creer-fonction-en-python)
 
-## 1. Installation et Tutoriel (8 pts)
+## 0.1 Création du dépôt GIT
+
+:::note[Facultatif (sauf TSN)]
+Cette étape est obligatoire pour les terminales et facultative (+3 points) pour les secondes&nbsp;:
+
+- 1 point pour la création du dépôt dans les règles
+- 1 point pour des commits intermédiaires corrects
+- 1 point pour des sources à jour en fin de TP
+:::
+
+:::danger[L'accès au [HomeLab](http://homelab) ne fonctionne pas]
+C'est que ta machine n'est pas paramétrée comme client DHCP... demande à ton enseignant de régler ce petit problème.
+:::
+
+**Créer le dépôt GIT du projet sur le HomeLab** :
+
+- Aller sur http://homelab:3000
+- S'identifier avec le login/pass windows
+- En haut à droit, cliquer sur "+"
+- Puis sur "+ nouveau dépôt"
+- Nom du dépôt : `tp-pygame` (respecter l'orthographe !)
+- Visibilité : public (pas privé)
+- Laisser tout le reste par défaut
+- Cliquer sur "créer un dépôt"
+
+**Cloner (récupérer) le dépôt en local** :
+
+- La commande "git" doit être installée
+  - Si ce n'est pas le cas, [installer git sous windows](https://git-scm.com/downloads/win)
+- Sur la page du dépôt, copier l'url (en haut à droite)
+- Ouvrir le terminal git
+- Taper les commandes suivantes pour récupérer le dépôt
+
+```sh
+# Demander à git d'enregistrer identifiant + mot de passe
+git config --global credential.helper store
+
+# Cloner
+git clone [url-du-depot]
+
+# Aller dans le dossier du projet
+cd tp-pygame
+
+# Vérifier que cette commande fonctionne sans
+# demander d'identifiant ou de mot de passe
+git pull
+```
+
+Par la suite, il faudra valider à chaque étape (commit) puis pousser à la fin du TP uniquement (push).
+
+```sh
+# Pour valider
+git add .
+git commit -m "Etape X : [titre de l'étape]"
+
+# Pour pousser
+git push
+```
+
+## 1. Installation et Tutoriel (6 pts)
 
 Installe Pygame Zero et suis [le tutoriel d'introduction](https://pgzero-french.readthedocs.io/fr/latest/installation.html) pour créer le petit jeu de l'Alien.
 
@@ -34,7 +97,16 @@ Pour pouvoir continuer le TP, il est important de ne pas opérer de modification
 Lis bien le tutoriel et comprends le code que tu écris, ça te servira pour la suite.
 :::
 
-## 2. Améliorer le jeu (7 pts)
+:::note[Pour les utilisateurs de GIT]
+Ajoute et valide tes sources :
+
+```sh
+git add .
+git commit -m "Etape 1 : Installation et Tutoriel"
+```
+:::
+
+## 2. Améliorer le jeu (6 pts)
 
 Nous allons modifier le code source de ce petit jeu pour l'améliorer.
 
@@ -50,7 +122,7 @@ Fais le traverser à une vitesse légèrement plus élevée pour qu'il soit un p
 Sur la ligne de code à changer, une valeur de **5** est correcte. Ne le fais pas aller trop vite.
 :::
 
-### 2.3 Faire "tomber" l'alien (2)
+### 2.3 Faire "tomber" l'alien (1)
 
 L'alien doit apparaître en haut de la fenêtre puis disparaître en bas de la fenêtre comme si on le voyait tomber d'une vraie fenêtre.
 
@@ -79,7 +151,16 @@ print(random.randint(2, 10))
 ```
 :::
 
-## 3 Créer un jeu avec ChatGPT (5 pts)
+:::note[Pour les utilisateurs de GIT]
+Ajoute et valide tes sources :
+
+```sh
+git add .
+git commit -m "Etape 2 : Améliorer du jeu"
+```
+:::
+
+## 3 Créer un jeu avec ChatGPT (4 pts)
 
 Pour la fin de ce TP, je laisse libre cours à ton imagination pour créer un jeu en Python à l'aide de [ChatGPT](https://chatgpt.com/). Écris ton jeu dans un fichier `jeu-ia.py`.
 
@@ -159,4 +240,15 @@ if __name__ == "__main__":
 
 :::caution[Attention]
 ChatGPT risque d'ouvrir une fenêtre spéciale pour l'écriture de code source, qui est une fonction limitée dans sa version gratuite. Demande à "revenir dans le chat" pour pouvoir continuer.
+:::
+
+:::note[Fin de TP]
+Ajoute et valide tes sources (GIT) :
+
+```sh
+git add .
+git commit -m "Etape 3 : Jeu avec ChatGPT"
+```
+
+Ou mettre vos sources dans le casier ENT de l'enseignant.
 :::
