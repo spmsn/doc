@@ -1,5 +1,7 @@
 # build output
 dist/
+spmsn.github.io
+
 # generated types
 .astro/
 

@@ -3,7 +3,6 @@ import starlight from '@astrojs/starlight';
 import rehypeExternalLinks from 'rehype-external-links';
 import { targetBlank } from './src/plugins/targetBlank';
 
-
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://spmsn.github.io',

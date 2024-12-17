@@ -1,6 +1,8 @@
 ---
 title: Informatique
-description: Desc prog
 ---
 
-Hellow
+- [Programmation](programmation/)
+- [Réseaux](reseaux/)
+- [Systèmes](systemes/)
+- [Travaux Pratiques](travaux-pratiques/)
