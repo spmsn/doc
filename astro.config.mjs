@@ -1,11 +1,25 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import rehypeExternalLinks from 'rehype-external-links';
+import { targetBlank } from './src/plugins/targetBlank';
+
 
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://spmsn.github.io',
 	base: '/doc',
     trailingSlash: "never",
+	markdown: {
+		rehypePlugins: [
+			[targetBlank, { domain: 'spmsn.github.io' }],
+			[
+				rehypeExternalLinks,
+				{
+				  content: { type: 'text', value: ' 🡥' }
+				}
+			],
+		],
+	},
 	integrations: [
 		starlight({
 			title: 'Base de Connaissance SN',
