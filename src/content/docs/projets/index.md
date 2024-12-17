@@ -1,6 +1,8 @@
 ---
 title: Nos projets
 description: Les principaux projets des baccalauréat professionnels de Saint-Pierre-et-Miquelon
+sidebar:
+  order: 1
 ---
 
 Cette section présente les projets remarquables de notre section professionnelle. Vous y trouverez leurs cahier des charge, spécifications et manuels d'utilisation.
