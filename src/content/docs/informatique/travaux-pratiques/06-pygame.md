@@ -21,7 +21,7 @@ Seront notés :
 
 Pour ce TP, tu as besoin de connaître :
 
-- [Les bases de Python](/doc/informatique/programmation/python/01-introduction) (documentation à compléter)
+- [Les bases de Python](/informatique/programmation/python/01-introduction) (documentation à compléter)
 - [Les conditions (if, else)](https://python.doctor/page-apprendre-conditions-structures-conditionnelles-if-else-python-cours-debutant)
 - [Les boucles (for, while)](https://python.doctor/page-apprendre-boucles-python-loop)
 - [Les fonctions (qu'on crée avec "def")](https://python.doctor/page-apprendre-creer-fonction-en-python)

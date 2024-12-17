@@ -7,7 +7,6 @@ import { targetBlank } from './src/plugins/targetBlank';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://spmsn.github.io',
-	base: '/doc',
     trailingSlash: "never",
 	markdown: {
 		rehypePlugins: [
