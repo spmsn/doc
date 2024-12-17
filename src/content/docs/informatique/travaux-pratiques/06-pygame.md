@@ -10,7 +10,7 @@ description: Débuter en jeu avec Pygame Zero
 Seront notés : 
 
 - **Le respect des consignes** (2 points)
-- **Ton attitude positive et pro-active** (3 points)
+- **Ton attitude positive, pro-active, discrète** (3 points)
 - La note est plafonnée à 20
 
 :::caution
@@ -23,7 +23,7 @@ Pour ce TP, tu as besoin de connaître :
 
 - [Les bases de Python](/doc/informatique/programmation/python/01-introduction) (documentation à compléter)
 - [Les conditions (if, else)](https://python.doctor/page-apprendre-conditions-structures-conditionnelles-if-else-python-cours-debutant)
-- [Les boucles (for)](https://python.doctor/page-apprendre-boucles-python-loop)
+- [Les boucles (for, while)](https://python.doctor/page-apprendre-boucles-python-loop)
 - [Les fonctions (qu'on crée avec "def")](https://python.doctor/page-apprendre-creer-fonction-en-python)
 
 ## 0.1 Création du dépôt GIT
@@ -43,7 +43,7 @@ C'est que ta machine n'est pas paramétrée comme client DHCP... demande à ton 
 **Créer le dépôt GIT du projet sur le HomeLab** :
 
 - Aller sur http://homelab:3000
-- S'identifier avec le login/pass windows
+- S'identifier avec ton login/pass windows
 - En haut à droit, cliquer sur "+"
 - Puis sur "+ nouveau dépôt"
 - Nom du dépôt : `tp-pygame` (respecter l'orthographe !)
@@ -74,8 +74,9 @@ cd tp-pygame
 git pull
 ```
 
-Par la suite, il faudra valider à chaque étape (commit) puis pousser à la fin du TP uniquement (push).
+Par la suite, tu seras amené à utiliser git pour valider et pousser ton travail.
 
+<!--
 ```sh
 # Pour valider
 git add .
@@ -84,6 +85,7 @@ git commit -m "Etape X : [titre de l'étape]"
 # Pour pousser
 git push
 ```
+-->
 
 ## 1. Installation et Tutoriel (6 pts)
 
@@ -114,15 +116,15 @@ Nous allons modifier le code source de ce petit jeu pour l'améliorer.
 
 Pour cela, il suffit de modifier les dimensions dans le code.
 
-### 2.1 Faire aller l'alien plus vite (1)
+### 2.2 Faire aller l'alien plus vite (1)
 
-Fais le traverser à une vitesse légèrement plus élevée pour qu'il soit un peu plus difficile de cliquer dessus.
+Fais traverser l'alien à une vitesse légèrement plus élevée, pour qu'il soit un peu plus difficile de cliquer dessus.
 
 :::note[Suggestion]
 Sur la ligne de code à changer, une valeur de **5** est correcte. Ne le fais pas aller trop vite.
 :::
 
-### 2.3 Faire "tomber" l'alien (1)
+### 2.3 Faire "tomber" l'alien (2)
 
 L'alien doit apparaître en haut de la fenêtre puis disparaître en bas de la fenêtre comme si on le voyait tomber d'une vraie fenêtre.
 
@@ -130,7 +132,7 @@ L'alien doit apparaître en haut de la fenêtre puis disparaître en bas de la f
 Aide-toi de la [documentation pour positionner ton acteur](https://pgzero-french.readthedocs.io/fr/latest/builtins.html#positionner-les-acteurs).
 :::
 
-### 2.4 Position horizontale aléatoire (3)
+### 2.4 Position horizontale aléatoire (2)
 
 Le joueur ne doit pas savoir à quelle position, sur l'axe horizontal, l'alien va apparaître. A toi de faire en sorte qu'il apparaisse de manière aléatoire sur cet axe.
 
@@ -173,11 +175,12 @@ Peux-tu me dire comment t'utiliser très simplement ?
 
 ### Quelques conseils
 
-- Commence par un jeu simple !
-- Décris ton jeu avec des détails.
-- Demande à l'améliorer au fur et à mesure.
-- Regarde le code et efforce toi de le comprendre.
-
+- Choisis un jeu simple ! (qui n'est pas celui de l'exemple ci-dessous)
+- Demande à ChatGPT de coder ton je en Python.
+  - Décris ton jeu avec des détails.
+  - Copie-colle dans un fichier et teste-le.
+  - Demande à l'améliorer au fur et à mesure.
+- Analyse le code et efforce toi de le comprendre.
 
 :::note[Exemple]
 Prompt 1 :
@@ -242,13 +245,14 @@ if __name__ == "__main__":
 ChatGPT risque d'ouvrir une fenêtre spéciale pour l'écriture de code source, qui est une fonction limitée dans sa version gratuite. Demande à "revenir dans le chat" pour pouvoir continuer.
 :::
 
-:::note[Fin de TP]
-Ajoute et valide tes sources (GIT) :
+:::tip[Fin de TP]
+
+- Envoie tes sources dans le casier ENT de l'enseignant,
+- ou ajoute, valide et pousse ton dépôt GIT :
 
 ```sh
 git add .
 git commit -m "Etape 3 : Jeu avec ChatGPT"
+git push
 ```
-
-Ou mettre vos sources dans le casier ENT de l'enseignant.
 :::
