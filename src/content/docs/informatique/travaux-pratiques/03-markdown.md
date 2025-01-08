@@ -11,7 +11,7 @@ La syntaxe Markdown permet d'écrire toutes sortes de documents avec les avantag
 - Elle est très simple à apprendre et à utiliser.
 - On peut convertir du Markdown en plein d'autres formats.
 - Sa simplicité nous oblige à utiliser un format sobre.
-- Il est durable[^durable], contrairement aux formats plus complexes.
+- Il est durable, contrairement aux formats plus complexes.
 
 :::note[Pourquoi sobre ?]
 Tu ne peux pas mettre des couleurs comme tu veux et du texte et énorme ou trop petit. La qualité visuelle du document reste de ce fait cohérente.
@@ -62,6 +62,7 @@ Cet éditeur reconnait Markdown directement. **Astuce** : en haut à droite tu a
 
 - **Vérifier qu'un éditeur est installé**, ou l'installer.
 - **Choisir un sujet** sur lequel rédiger ta documentation ou tutoriel.
+- **Créer un dossier** `tp-documentation`.
 - **Editer un document** `[mon-sujet].md` dans ce dossier.
 
 :::note[Entête du document]
