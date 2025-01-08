@@ -1,5 +1,5 @@
 ---
-title: 06 Créer un jeu
+title: Créer un jeu pygame
 description: Débuter en jeu avec Pygame Zero
 ---
 
