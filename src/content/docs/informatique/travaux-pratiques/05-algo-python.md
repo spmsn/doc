@@ -37,7 +37,7 @@ Créer un dossier "`algo-python`" dans lequel tu mettras les fichiers de ton TP.
 :::
 
 :::danger[Rendu avec GIT]
-Crée un dépôt `algo-python` avec ton compte, tel que nous l'avons déjà fait [ici](06-pygame/#01-création-du-dépôt-git). On validera à chaque fin d'exercice.
+Crée un dépôt `algo-python` avec ton compte, tel que nous l'avons déjà fait [ici](/informatique/travaux-pratiques/06-pygame/#01-création-du-dépôt-git). On validera à chaque fin d'exercice.
 :::
 
 ## Exercice 1 (2 points)
