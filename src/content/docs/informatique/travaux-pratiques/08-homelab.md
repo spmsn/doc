@@ -63,7 +63,7 @@ Un partage NFS doit être mis en place pour les partitions home.
 
 ```sh
 # Disque à formatter
-export DISK=/dev/sda
+export DISK=/dev/nvme0n1
 export OPTS=defaults,x-mount.mkdir,noatime,nodiratime,ssd,compress=zstd:3
 
 # Disque GPT
@@ -75,9 +75,9 @@ export OPTS=defaults,x-mount.mkdir,noatime,nodiratime,ssd,compress=zstd:3
 #parted $DISK -- print
 
 # A changer en fonction du partitionnement de windows
-mkfs.fat -F 32 -n BOOT ${DISK}'1'
-mkfs.btrfs -L NIXOS ${DISK}'2'
-mkswap -L SWAP ${DISK}'3'
+mkfs.fat -F 32 -n BOOT ${DISK}'p1'
+mkfs.btrfs -L NIXOS ${DISK}'p5'
+#mkswap -L SWAP ${DISK}'3'
 
 # Création des sous-volumes btrfs
 mount /dev/disk/by-label/NIXOS /mnt
@@ -88,7 +88,7 @@ umount /mnt
 mount -o $OPTS,subvol=@ /dev/disk/by-label/NIXOS /mnt
 mount -o $OPTS,subvol=@home /dev/disk/by-label/NIXOS /mnt/home
 mount --mkdir -o umask=077 /dev/disk/by-label/BOOT /mnt/boot
-swapon /dev/disk/by-label/SWAP
+#swapon /dev/disk/by-label/SWAP
 
 nixos-generate-config --root /mnt
 
