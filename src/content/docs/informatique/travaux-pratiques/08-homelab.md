@@ -100,7 +100,10 @@ echo '''{ config, lib, pkgs, ... }:
     ];
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  networking.hostName = "pc1";
+  #boot.loader.grub.enable = true;
+  #boot.loader.grub.device = "nodev";
+  #boot.loader.grub.useOSProber = true;
+  networking.hostName = "pc2";
   time.timeZone = "America/Miquelon";
   i18n.defaultLocale = "fr_FR.UTF-8";
   console = {
