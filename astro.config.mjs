@@ -6,14 +6,17 @@ import { targetBlank } from './src/plugins/targetBlank';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://spmsn.github.io',
-    trailingSlash: "never",
+	trailingSlash: "always",
+	build: {
+		assets: 'astro',
+	},
 	markdown: {
 		rehypePlugins: [
 			[targetBlank, { domain: 'spmsn.github.io' }],
 			[
 				rehypeExternalLinks,
 				{
-				  content: { type: 'text', value: ' ↗' }
+					content: { type: 'text', value: '\u{00A0}\u{1F855}' }
 				}
 			],
 		],
@@ -38,7 +41,7 @@ export default defineConfig({
 						{ label: 'Programmation', autogenerate: { directory: 'informatique/programmation' }, collapsed: true },
 						{ label: 'Systèmes', autogenerate: { directory: 'informatique/systemes' }, collapsed: true },
 						{ label: 'Réseaux', autogenerate: { directory: 'informatique/reseaux' }, collapsed: true },
-						{ label: 'Travaux Pratiques', autogenerate: { directory: 'informatique/travaux-pratiques'}, collapsed: true },
+						{ label: 'Travaux Pratiques', autogenerate: { directory: 'informatique/travaux-pratiques' }, collapsed: true },
 					],
 					collapsed: true,
 				},
@@ -52,7 +55,7 @@ export default defineConfig({
 					],
 					collapsed: true,
 				},
-				{ label: 'Projets', autogenerate: { directory: 'projets'}, collapsed: true },
+				{ label: 'Projets', autogenerate: { directory: 'projets' }, collapsed: true },
 				{ label: 'Les Défis', slug: 'defis' },
 				{ label: 'A Propos', slug: 'a-propos' },
 			],
