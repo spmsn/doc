@@ -29,7 +29,7 @@ Parcours les exemples du logiciels et lance les simulations pour te familiariser
 
 Crée un nouveau projet SimulIDE que tu nommeras `exercice-1` dans le répertoire `Documents/tp9`. Puis crée un circuit comportant les éléments suivants&nbsp;:
 
-- Une LED et une résistance en parallèle.
+- Une LED et une résistance en série.
 - Une masse et une tension constante de 12V pour alimenter.
 - Pour que la LED soit correctement alimentée, calcule la valeur de la résistance et modifie là.
 - La simulation doit allumer la LED.
