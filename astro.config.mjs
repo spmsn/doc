@@ -31,7 +31,7 @@ export default defineConfig({
 				},
 			},
 			social: {
-				github: 'https://github.com/spmsn',
+				github: 'https://github.com/spmsn/',
 			},
 			sidebar: [
 				{ label: 'Bienvenue !', slug: 'lisez-moi' },
