@@ -24,6 +24,10 @@ Préparez les commandes à exécuter dans le fichier de rendu.
 
 ## 2. préparer une machine Virtualbox
 
+:::caution
+Paramétrer virtualbox pour que les VMs soient stockées dans `/var/vms`.
+:::
+
 Démarrer sous Linux, puis démarrer Virtualbox et préparer une machine avec les caractéristiques suivantes&nbsp;:
 
 - 4 CPUs
@@ -48,8 +52,21 @@ Vous pouvez vous débrouiller pour installer ce système dans la machine "hôte"
 :::
 
 - Installer le système conformément à la documentation.
-- L'utilisateur à déclarer s'appelle "nix".
-- Son mot de passe est défini à "password".
+- Modifier la configuration :
+  - Hostname : nixos-<tonpseudo>
+  - Utilisateur : nix
+  - Mot de passe nix et root : p (terminer avec `passwd nix`)
+  - Ajouter `nano` aux paquetages
+  - Activer openssh
+  - Ajouter le proxy des paquetages ci-dessous
+
+```nix
+# Cache de paquetages sur nixfarm
+nix.settings.substituters = [ "http://nixfarm:8501" ];
+nix.settings.trusted-public-keys = [
+	"cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
+];
+```
 
 ## 4. Configuration du système
 
