@@ -1,5 +1,5 @@
 ---
-title: Ligne de commandes
+title: Entraînement CLI
 subtitle: Installer un OS sans interface graphique et s'entraîner aux commandes de base
 ---
 
