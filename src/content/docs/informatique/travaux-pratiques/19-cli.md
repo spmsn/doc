@@ -24,7 +24,7 @@ Créez un dépôt git `tp-cli` dans [le forgejo local](http://homelab:3000). Pui
 
 ```sh
 # Demander à git d'enregistrer identifiant + mot de passe
-git config --global credential.helper store
+git config credential.helper store
 
 # Cloner
 git clone [url-du-depot]
