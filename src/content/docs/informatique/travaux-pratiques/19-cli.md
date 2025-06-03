@@ -23,18 +23,14 @@ Quelques commandes utiles : `cd`, `mkdir`, `touch`, `nano`, `git`.
 Créez un dépôt git `tp-cli` dans [le forgejo local](http://homelab:3000). Puis dans `~/Documents`, cloner ce dépôt.
 
 ```sh
-# Demander à git d'enregistrer identifiant + mot de passe
-git config credential.helper store
-
 # Cloner
 git clone [url-du-depot]
 
 # Aller dans le dossier du projet
 cd tp-cli
 
-# Vérifier que cette commande fonctionne sans
-# demander d'identifiant ou de mot de passe
-git pull
+# Demander à git d'enregistrer identifiant + mot de passe
+git config credential.helper store
 ```
 
 En ligne de commandes :
@@ -46,10 +42,11 @@ En ligne de commandes :
 ```sh
 git add .
 git commit -m "Création du fichier de réponses"
+git push
 ```
 
 :::note
-A la fin de chaque étape, faites un `git add` puis `git commit` comme précédemment, avec une phrase adaptée pour chaque commit.
+A la fin de chaque étape, faites ces opérations, avec une phrase adaptée pour chaque commit. Le mot de passe ne devrait pas être redemandé.
 :::
 
 ## 1. La commande `du`
