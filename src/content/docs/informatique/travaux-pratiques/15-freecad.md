@@ -41,19 +41,18 @@ Avant ce TP, tu as abordé les notions suivantes avec ton enseignant :
 
 ## 1. Modéliser une pièce de LEGO
 
-Grâce aux 3 premières vidéos de la série [Apprendre progressivement FreeCAD](https://www.youtube.com/watch?v=0jIQ_1piYZk&list=PLmCpX3se4fUlRZIIgG4Ply7Rxj6PYFisX&index=1), modélise pas à pas une pièce de LEGO en suivant le tutoriel.
+Grâce aux 3 premières vidéos de la série [Apprendre progressivement FreeCAD](https://www.youtube.com/playlist?list=PLmCpX3se4fUlRZIIgG4Ply7Rxj6PYFisX), modélise pas à pas une pièce de LEGO en suivant le tutoriel.
 
 ## 2. Mise en plan 2D
 
-Crée un plan 2D de la pièce avec l'ensemble des cotes utiles à sa fabrication, en suivant [l'étape "créer un plan" du tutoriel](https://www.youtube.com/watch?v=hr2ACrJIyUY&list=PLmCpX3se4fUlRZIIgG4Ply7Rxj6PYFisX&index=4).
+Crée un plan 2D de la pièce avec l'ensemble des cotes utiles à sa fabrication, en suivant [l'étape "créer un plan" du tutoriel](https://www.youtube.com/watch?v=_vx1hHbRZ7Y&list=PLmCpX3se4fUlRZIIgG4Ply7Rxj6PYFisX&index=3&t=415s).
 
 ## 3. Assemblage
 
-Grâce à un plugin à installer sous FreeCAD, tu peux [créer un assemblage](https://www.youtube.com/watch?v=MuoRg79jo_I&list=PLmCpX3se4fUlRZIIgG4Ply7Rxj6PYFisX&index=5) avec la pièce LEGO que tu as créée.
+Grâce à un plugin à installer sous FreeCAD, tu peux [créer un assemblage](https://www.youtube.com/watch?v=z5RF3SLdQok&list=PLmCpX3se4fUlRZIIgG4Ply7Rxj6PYFisX&index=4) avec la pièce LEGO que tu as créée.
 
-## 4. Bonnes pratiques
-
-Tu peux optionnellement regarder ce qu'est [le problème de "dénomination topologique"](https://www.youtube.com/watch?v=-3DKDojgypY&list=PLmCpX3se4fUlRZIIgG4Ply7Rxj6PYFisX&index=7) puis [créer une modélisation de 3 cubes en suivant les bonnes pratiques](https://www.youtube.com/watch?v=-3DKDojgypY&list=PLmCpX3se4fUlRZIIgG4Ply7Rxj6PYFisX&index=8) suivantes&nbsp;:
+:::tip[Rappel : quelques bonnes pratiques]
+Suivre ces étapes dans l'ordre :
 
 - Faire un schéma (sur une feuille papier).
 - Donner un nom aux éléments.
@@ -61,8 +60,9 @@ Tu peux optionnellement regarder ce qu'est [le problème de "dénomination topol
 - Faire des esquisses entièrement contraintes.
 - Créer les volumes principaux avant les détails.
 - Créer les plans 2D à la fin.
+:::
 
-## 5. Pièce LEGO à 4 bornes en autonomie
+## 4. Pièce LEGO à 4 bornes en autonomie
 
 Nous allons créer une pièce de LEGO à 4 bornes en utilisant ce que nous avons appris.
 
@@ -74,7 +74,7 @@ Nous allons créer une pièce de LEGO à 4 bornes en utilisant ce que nous avons
 :::tip[Comment faire ?]
 Tu as deux solutions :
 - Utiliser les notions que tu as apprises pour modifier le bloc et créer 2 autres bornes.
-- Créer la nouvelle brique avec [la fonction symétrique expliquée ici](https://www.youtube.com/watch?v=ePYs9VL1UEI&list=PLmCpX3se4fUlRZIIgG4Ply7Rxj6PYFisX&index=10).
+- Créer la nouvelle brique avec la fonction "symétrie".
 :::
 
 :::note
